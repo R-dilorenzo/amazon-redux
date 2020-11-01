@@ -1,0 +1,100 @@
+.header{
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* per consistenza con home.css con schermi di risoluzione molto grande*/ 
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__logo{
+    width: 100px;
+    margin-top: 18px;
+    margin: 0 20px; 
+    object-fit: contain;
+}
+
+.header__search{
+    display: flex;
+    flex: 1; 
+}
+
+
+.header__searchInput{
+    padding: 10px;
+    border:none;
+    width: 100%;
+}
+.MuiAutocomplete-input{
+    width: 100%;
+    padding: 5px !important;
+}
+
+.header__searchIcon{
+    background-color: #cd9042;
+    margin-top: 10px;
+    margin-left: -10px;
+    padding: 5px;
+    /* imposto attributo !important per sovrascrivere le impostazioni di MaterialUI */
+    height: 35px !important;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__link{
+    color: white;
+    text-decoration: none;
+}
+.header__link:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.header__navOption{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column; 
+}
+
+.header__navOption .navOption1{
+    font-size: 10px;
+}
+
+.header__navOption .navOption2{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header__carrello{
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.itemCarrello{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header{
+        flex-direction: column;
+    }
+    .header__nav{
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    .header__link{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
